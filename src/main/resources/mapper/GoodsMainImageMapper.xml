@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="scau.lcimp.lcimps.mapper.GoodsMainImageMapper">
+
+    <resultMap id="BaseResultMap" type="scau.lcimp.lcimps.domain.GoodsMainImage">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="goodsId" column="goods_id" jdbcType="INTEGER"/>
+            <result property="imageName" column="image_name" jdbcType="VARCHAR"/>
+            <result property="imagePosition" column="image_position" jdbcType="VARCHAR"/>
+            <result property="originalName" column="original_name" jdbcType="VARCHAR"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="isDeleted" column="is_deleted" jdbcType="BIT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,goods_id,image_name,image_position,
+        original_name,create_time,update_time,is_deleted
+    </sql>
+</mapper>
